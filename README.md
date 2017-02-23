@@ -1,3 +1,3 @@
 # Optional
 
-A simple optional class is comparable and obeys monad laws.
+A simple optional class is comparable, copy construct-able and obeys monad laws for c++11.

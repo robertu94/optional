@@ -7,9 +7,9 @@ else
 endif
 
 .PHONY: all clean
-BINS= optional
-all: $(BINS)
-test: all
+optional: optional.cc optional.hpp
+	$(CXX) $(CXXFLAGS) $^ -o $@
+test: optional
 	./optional
 clean:
 	$(RM) $(wildcard *.o) $(BINS)
